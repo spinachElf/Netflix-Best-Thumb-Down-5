@@ -11,8 +11,8 @@
     font-style: normal;
 }
 		@font-face {
-    font-family: 'HeirofLightRegular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightRegular.woff') format('woff');
+    font-family: '국립박물관문화재단클래식L';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,24 +22,35 @@
          url('alexbrush-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-		body{background-image: url("background.png"); color:40A300;word-break: keep-all;background-size: 100% }
-		.header{margin-top: 150px; margin-bottom: 150px; }
-		.head_eng{width: 100%; text-align: center; font-family: alex_brushregular,HeirofLightRegular; font-size: 10em; margin: 0px;}
-		.head_kor{width: 100%; text-align: center; font-family: AlexBrush-Regular,HeirofLightRegular; font-size: 7em; margin: 0px;}
-		.row{width: 80%; text-align: center; margin-left: auto;margin-right: auto; margin-top: 150px;}
+		@font-face {
+    font-family: 'Togalite-Light';
+    src: url('Togalite-Light.woff2') format('woff2'),
+        url('Togalite-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+		body{background-image: url("background.png"); color:40A300;word-break: keep-all;background-size: 100%; overflow-x: hidden; }
+		.header{margin-top: 80px; margin-bottom: 150px;text-overflow: clip; }
+		.head_eng{width: 100%; text-align: center; font-family: alex_brushregular; font-size: 16em; margin:auto;}
+		.head_kor{width: 100%; text-align: center; font-family: alex_brushregular,국립박물관문화재단클래식L; font-size: 11em; margin: 0px;}
+		.row{width: 80%; text-align: center; margin-left: auto;margin-right: auto; margin-top: 150px; margin-bottom: 500px;}
 		.index{font-size: 2em; line-height: 150%; font-family: 
 			Eulyoo1945-Regular;}
 		img{width: 100%;}
 
-		h2{margin-top: 10px; margin-bottom: -50px; padding:0px;}
-		.h2_eng{font-size: 8em;font-family: alex_brushregular,HeirofLightRegular;}
-		.h2_kor{font-size: 6em;font-family: alex_brushregular,HeirofLightRegular;}
-		.container{display: flex; margin-top: 80px; justify-content: center; align-items: center;}
+		h2{margin-top: 10px; margin-bottom: 20px; padding:0px;line-height: 100%}
+		.h2_eng{font-size: 8em;font-family: alex_brushregular,Togalite-Light;}
+		.h2_kor{font-size: 6em;font-family: alex_brushregular,국립박물관문화재단클래식L;}
+		.container{display: flex; margin-top: 30px; margin-bottom: 100px;justify-content: center; align-items: center;}
 		.item{width: 33%;padding: 20px;}		
 		.score{font-family: 'Eulyoo1945-Regular'; font-size: 2em; line-height: 150%;text-align: left;}
 		.comm{font-family: 'Eulyoo1945-Regular'; font-size: 1.2em; line-height: 150%;text-align: left;}
+		.foot1{font-family:alex_brushregular,국립박물관문화재단클래식L; }
+		.footer{margin: auto; text-align: center;}
 
 	</style>
 </head>
@@ -71,18 +82,137 @@
 				<img src="graph1.png">
 			</div>
 			<div class="item score">
-				<p>잔인함    ☻☻☻☻☻<br>
-놀라움   ☻☻<br>
-조악함 <br>
-더러움   ☻<br>
-불쾌함   ☻☻☻<br>
-뭔소리?    ☻☻<br>
-</p>
+				<p>잔인함    ✦✦✦✦✦<br>
+					놀라움   ✦✦<br>
+					조악함 <br>
+					더러움   ✦<br>
+					불쾌함   ✦✦✦<br>
+					뭔소리?    ✦✦<br>
+				</p>
 			</div>
 			<div class="item comm">
-				<p>왜 한국 배급사는 이 영화를 아동용 판타지인 것마냥 홍보했을까요? 잘리고, 꿰메고, 터지는 고어한 연출을 견딜 수만 있다면 칸 영화제 22분 기립박수의 대단한 영화를 음미할 수 있습니다. 조악함이라고는 찾아볼 수 있는 완성도 높은 영화지만, 제대로 소화하려면 3번은 봐야 이해가 가지 않을까 싶은 영화입니다. 나약한 저에게 두통을 안겨준 영화지만, 강인한 세상 사람들은 이 영화의 가치를 아주 높게 평가했다고 하네요. </p>
+				<p>왜 한국 배급사는 이 영화를 아동용 판타지인 것마냥 홍보했을까요? 잘리고, 꿰메고, 터지는 고어한 연출을 견딜 수만 있다면 칸 영화제 22분 기립박수의 대단한 영화를 음미할 수 있습니다. 조악함이라고는 찾아볼 수 없는 완성도 높은 영화지만, 제대로 소화하려면 3번은 봐야 이해가 가지 않을까 싶은 영화입니다. 나약한 저에게 두통을 안겨준 영화지만, 강인한 세상 사람들은 이 영화의 가치를 아주 높게 평가했다고 하네요. </p>
 			</div>
 		</div>
 	</section>
+	<section class="row">
+		<div>
+			<img src="movie2.png">
+		</div>
+		<div>
+			<h2 class="h2_eng">Monty Python And The Holy Grail</h2>
+			<h2 class="h2_kor">몬티 파이튼의 성배</h2>
+		</div>
+		<div class="container">
+			<div class="item">
+				<img src="graph2.png">
+			</div>
+			<div class="item score">
+				<p>잔인함   ✦✦<br>
+					놀라움   ✦✦✦✦✦<br>
+					조악함   ✦✦✦✦<br>
+					더러움   ✦✦✦<br>
+					불쾌함   ✦✦<br>
+					뭔소리?   ✦✦
+				</p>
+			</div>
+			<div class="item comm">
+				<p>몬티파이튼이 유명한 코미디언 그룹이라는 사실과, 아서왕 전설의 내용과, 중세시대의 삶의 모습과, 계급격차와 투표 민주주의의 내용을 알고 있으며, 조악한 연출과 소품으로부터 시작되는 블랙코미디를 좋아한다면 재밌게 볼 수 있는 정석 코미디 영화! … 아, 그러니까 몬티파이튼이라고 희극계의 비틀즈라는 사람들이 있는데요 … 
+</p>
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div>
+			<img src="movie3.gif">
+		</div>
+		<div>
+			<h2 class="h2_kor">리얼</h2>
+			<h2 class="h2_eng">REAL</h2>
+		</div>
+		<div class="container">
+			<div class="item">
+				<img src="graph3.png">
+			</div>
+			<div class="item score">
+				<p>잔인함   ✦<br>
+					놀라움   ✦✦✦✦✦<br>
+					조악함   ✦✦✦✦✦<br>
+					더러움   ✦✦✦<br>
+					불쾌함   ✦✦✦✦✦<br>
+					뭔소리?   ✦✦
+				</p>
+			</div>
+			<div class="item comm">
+				<p>한국 액션 영화계에 한 획을 그은 그 영화. 얼굴을 아는 배우가 여럿 나온다는 게 너무나 신기해서 시간 가는 줄 모르고 보게 되는 그 영화. 천방지축 어리둥절 빙글빙글 돌아가는 빨간 정장의 주인공의 장풍에 나가떨어지는 조폭들이 나오는 그 영화가 맞습니다. 액션 뿐만이 아닌, 스토리와 캐릭터, 연출 등 모든 면에서 탄식을 자아내는 무시무시한 영화, 시간이 너무 많아 어디엔가 버리고 싶다면 이번 주말, <리얼>을 감상해 보시는 것은 어떨까요? 
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div>
+			<img src="movie4.png">
+		</div>
+		<div>
+			<h2 class="h2_eng">新世紀エヴァンゲリオン</h2>
+			<h2 class="h2_kor">신세기 에반게리온</h2>
+		</div>
+		<div class="container">
+			<div class="item">
+				<img src="graph4.png">
+			</div>
+			<div class="item score">
+				<p>잔인함   ✦✦<br>
+					놀라움   ✦✦✦✦✦<br>
+					조악함   ✦<br>
+					더러움   ✦✦<br>
+					불쾌함   ✦✦✦✦✦<br>
+					뭔소리?   ✦✦✦✦✦<br>
+
+				</p>
+			</div>
+			<div class="item comm">
+				<p>일본 만화애니계의 전설이라는 말에 괜히 봐야할 것만 같아서 봤다가는 나도 모르는 사이 오타쿠가 될 수 있습니다. 이해할 수 없는 우울한 감성의 일본 남자애한테 무슨 로봇을 타라는데 그걸 또 순순히 타서는 별의별 일에 휩싸이고 세상이 어떻게 된다는데 대체 어떻게 된다는 건지 이해할 수 없어 각종 해석을 훑다보면 애니메이션은 10시간 동안 보고 해석만 30시간 봤다는 사실을 깨닫게 됩니다. 우울할 때 더 우울해지고 싶다면, 복잡한 세상을 더 복잡하게 바라보고 싶다면, 음침한 일본 오타쿠들이 왜 그리 음침해졌는지 알고 싶다면 <에반게리온>을 봅시다.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div>
+			<img src="movie5.png">
+		</div>
+		<div>
+			<h2 class="h2_eng">賭ケグルイ</h2>
+			<h2 class="h2_kor">카케구루이</h2>
+		</div>
+		<div class="container">
+			<div class="item">
+				<img src="graph5.png">
+			</div>
+			<div class="item score">
+				<p>잔인함   ✦✦<br>
+					놀라움   ✦✦✦<br>
+					조악함   ✦✦✦<br>
+					더러움   ✦✦✦✦<br>
+					불쾌함   ✦✦✦✦✦<br>
+					뭔소리?   ✦
+
+				</p>
+			</div>
+			<div class="item comm">
+				<p>음침 일본 오타쿠들이 무럭무럭 자라 애니메이션을 만들었습니다. 일본 만화애니계는 왜 그렇게 중고등 청소년에게 사건사고와 시련을 주고 싶어하는 걸까요? 왜 굳이 ⌜야심을 실현하기 위해서는 리스크를 짊어져야만 한다⌟는 삶의 교훈을 도박으로… 얻으려는 걸까요? 아~ 정재계 자제분들이라서 도전과 실력의 중요성을 배우기 위해서 이 학교에 들어온다고요~ ……  애들아 운동장에라도 나가서 한 바퀴씩 돌면서 햇빛도 좀 쐬고 그래라 커튼 걷고 니네가 어둠의 자식들이냐, 20페이지 펴라 너네 반이 진도 제일 느려.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="row index">
+		<p>조금은 역겨운, 조금은 이상한, 조금은 독특한 영상 취향을 가진 당신을 위해,<br>지극히 개인적인 감상으로 영상을 추천해드렸습니다.<br>어떤 게 가장 끔찍했나요?<br>동시에 어떤 게 가장 흥미로웠나요?<br>
+이번 주말엔 답 없는 문화 컨텐츠를 즐겨 보는 건 어떨까요?
+	</section>
+	<footer class="footer">
+		<p>copyright &copy; by Kim Seungmin All Right Deserved<br><br>
+			<span class="foot1">Netflix Best-Thumb-Down<br>넷플릭스 최고의 비추천 5선</span>
+		</p>
+	</footer>
 </body>
 </html>
